@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	httpcache "github.com/ndx-technologies/mm-go-redis-http-cache"
+	httpcache "github.com/ndx-technologies/go-redis-http-cache"
 	"github.com/redis/go-redis/v9"
 )
 

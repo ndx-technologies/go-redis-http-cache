@@ -1,4 +1,4 @@
-module github.com/ndx-technologies/mm-go-redis-http-cache
+module github.com/ndx-technologies/go-redis-http-cache
 
 go 1.25.0
 
