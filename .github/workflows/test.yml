@@ -39,4 +39,9 @@ jobs:
           REDIS_PASSWORD: testpassword
         run: |
           go get -v -t ./...
-          go test ./...
+          go test -coverprofile=coverage.txt ./...
+
+      - name: codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
