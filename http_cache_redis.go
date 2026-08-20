@@ -19,7 +19,7 @@ import (
 
 type HTTPClientCacheRedisConfig struct {
 	RedisPrefix string        `json:"redis_prefix"`
-	MinTTL      time.Duration `json:"min_ttl,format:units"`
+	MinTTL      time.Duration `json:"min_ttl"`
 }
 
 func (s HTTPClientCacheRedisConfig) WithDefaults() HTTPClientCacheRedisConfig {
