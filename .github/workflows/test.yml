@@ -37,9 +37,4 @@ jobs:
           REDIS_URL: redis://:testpassword@localhost:6379
         run: |
           go get -v -t ./...
-          go test -coverprofile=coverage.txt ./...
-
-      - name: codecov
-        uses: codecov/codecov-action@v5
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+          go test -cover ./...
